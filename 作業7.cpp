@@ -1,24 +1,14 @@
-#include <stdio.h>
+#include <stdio.h> 
 #include <stdlib.h>
-
-
-int main ()
-{
- int hello,i,sum;   	
- printf("請輸入一個整數:");
- scanf("%d",&hello);
- sum=(hello*(hello+1)/2);
- printf("答案");
-  for(i =1; i<=hello; i++)
-  {
-    if(i!=hello)
-     printf("%d+",i);
-	else  
-     printf("%d=%d",i,sum);
-  }
- return 0;
-    
-
+int main(void) 
+{ 
+int i=0,sum=0,N=0; 
+printf("請輸入N: "); 
+scanf("%d",&N); 
+for(i=0;i<=N;i++){ 
+sum+=i; 
+} 
+printf("1+2+...+ %d =%d",N,sum); 
+system("PAUSE"); 
+return 0; 
 }
-
-
